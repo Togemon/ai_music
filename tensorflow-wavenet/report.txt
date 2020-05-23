@@ -1,0 +1,30 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'generate.py'
+ outputting to 'generate_v2.py'
+--------------------------------------------------------------------------------
+
+128:16: INFO: Added keywords to args of function 'tf.cond'
+128:24: INFO: Added keywords to args of function 'tf.size'
+129:32: INFO: Added keywords to args of function 'tf.size'
+142:11: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+158:14: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+166:17: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+170:38: INFO: Renamed 'tf.global_variables' to 'tf.compat.v1.global_variables'
+172:12: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+263:13: INFO: tf.summary.FileWriter requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+263:13: INFO: Renamed 'tf.summary.FileWriter' to 'tf.compat.v1.summary.FileWriter'
+264:4: INFO: tf.summary.audio requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+264:4: INFO: Renamed 'tf.summary.audio' to 'tf.compat.v1.summary.audio'
+265:16: INFO: tf.summary.merge_all requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+265:16: INFO: Renamed 'tf.summary.merge_all' to 'tf.compat.v1.summary.merge_all'
+--------------------------------------------------------------------------------
+

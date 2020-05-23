@@ -1,0 +1,51 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'ops.py'
+ outputting to 'ops_v2.py'
+--------------------------------------------------------------------------------
+
+7:11: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+12:11: INFO: Renamed 'tf.train.MomentumOptimizer' to 'tf.compat.v1.train.MomentumOptimizer'
+17:11: INFO: Renamed 'tf.train.RMSPropOptimizer' to 'tf.compat.v1.train.RMSPropOptimizer'
+28:9: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+28:9: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+29:16: INFO: Added keywords to args of function 'tf.shape'
+31:17: INFO: Added keywords to args of function 'tf.pad'
+33:21: INFO: Added keywords to args of function 'tf.transpose'
+38:9: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+38:9: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+39:16: INFO: Added keywords to args of function 'tf.shape'
+41:21: INFO: Added keywords to args of function 'tf.transpose'
+43:27: INFO: Renamed 'tf.div' to 'tf.compat.v1.div'
+47:9: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+47:9: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+48:23: INFO: Added keywords to args of function 'tf.shape'
+51:19: INFO: Added keywords to args of function 'tf.nn.conv1d'
+51:19: INFO: Renamed keyword argument for tf.nn.conv1d from value to input
+55:23: INFO: Added keywords to args of function 'tf.nn.conv1d'
+55:23: INFO: Renamed keyword argument for tf.nn.conv1d from value to input
+57:20: INFO: Added keywords to args of function 'tf.shape'
+66:9: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+66:9: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+67:13: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+72:20: INFO: Renamed 'tf.log1p' to 'tf.math.log1p'
+72:52: INFO: Renamed 'tf.log1p' to 'tf.math.log1p'
+75:15: INFO: Changed tf.to_int32 call to tf.cast(..., dtype=tf.int32).
+80:9: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+80:9: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+83:22: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+--------------------------------------------------------------------------------
+
